@@ -1,5 +1,5 @@
 {
-  "name": "cupo",
+  "name": "testing",
   "version": "0.1.0",
   "description": "pa conseguir cupo",
   "permissions": ["activeTab", "tabs", "scripting"],
@@ -8,7 +8,9 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_title": "cupo"
+    "default_title": "cupo",
+    "default_popup": "popup.html"
   },
+
   "manifest_version": 3
 }
