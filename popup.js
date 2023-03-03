@@ -7,8 +7,9 @@ const handlesubmit = (e) => {
   // Convert the data to an object
   const obj = Object.fromEntries(data.entries());
    // Convert the object to JSON
-  const json = JSON.stringify(obj);
-  console.log(json);
+  const list = JSON.stringify(obj);
+  console.log(list);
 }
 
 form.addEventListener('submit', handlesubmit);
+

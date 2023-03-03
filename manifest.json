@@ -1,5 +1,5 @@
 {
-  "name": "testing",
+  "name": "cupos - usm",
   "version": "0.1.0",
   "description": "pa conseguir cupo",
   "permissions": ["activeTab", "tabs", "scripting"],

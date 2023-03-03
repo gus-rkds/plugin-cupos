@@ -1,8 +1,9 @@
-const seccionesSeleccionar = {"HUMANIDADES I": "1MB", 
-								"MATEMATICA III": "1MA", 
-								"DEONTOLOGIA PROFESIONAL": "1MA", 
-								"FISICA II": "1MB",
-								"PROGRAMACION I": "1MB" }
+const seccionesSeleccionar ={
+"HUMANIDADES I": "1MB", 
+"MATEMATICA III": "1MA", 
+"DEONTOLOGIA PROFESIONAL": "1MA", 
+"FISICA II": "1MB",
+"PROGRAMACION I": "1MB" }
 
 btnsSucess = document.querySelectorAll('a.btn.hidden-print.btn-success.btn-xs')
 btnsSucess.forEach(function(button){
