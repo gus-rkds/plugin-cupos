@@ -1,2 +1,2 @@
 # plugin-cupos
-a chrome plugin created for enrolling al the University Courses automatically
+A chrome plugin created for enrolling all the University Courses automatically
