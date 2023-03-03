@@ -1,0 +1,14 @@
+{
+  "name": "cupo",
+  "version": "0.1.0",
+  "description": "pa conseguir cupo",
+  "permissions": ["activeTab", "tabs", "scripting"],
+  "host_permissions": ["https://usm.terna.net/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "cupo"
+  },
+  "manifest_version": 3
+}
