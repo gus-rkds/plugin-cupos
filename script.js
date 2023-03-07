@@ -1,11 +1,14 @@
 // ----------- Script ----------------
 
+//import listaMaterias from "./popup.js"
+//console.log(listaMaterias)
+
 const seccionesSeleccionar = {
-"HUMANIDADES I": "1MB", 
-"MATEMATICA III": "1MA", 
-"DEONTOLOGIA PROFESIONAL": "1MA", 
-"FISICA II": "1MB",
-"PROGRAMACION I": "1MB" }
+"HUMANIDADES I": "B", 
+"MATEMATICA III": "A", 
+"DEONTOLOGIA PROFESIONAL": "A", 
+"FISICA II": "B",
+"PROGRAMACION I": "B" }
 
 btnsSucess = document.querySelectorAll('a.btn.hidden-print.btn-success.btn-xs')
 btnsSucess.forEach(function(button){

@@ -1,27 +1,50 @@
 // ----------- Crear Lista ----------------
 
-let listaMaterias = []
+const listaMaterias = []
 
-const createList = (materia, seccion) => {
-  const newMateria = {
-    materia: materia,
-    seccion: seccion
+const getList = () => {
+  console.log(listaMaterias)
+  return listaMaterias
+}
+
+const pintarLista = () => {
+  let list = getList(), tbody = document.querySelector('#table tbody')
+
+  tbody.innerHTML = ''
+
+  for(let i=0 ; i < list.length; i++) {
+    let row = tbody.insertRow(i)
+    let materiaCell = row.insertCell(0)
+    let profesorCell = row.insertCell(1)
+
+    materiaCell.innerHTML = list[i].materia
+    profesorCell.innerHTML = list[i].profesor
+
+    tbody.appendChild(row)
   }
-  console.log(newMateria)
+}
+
+pintarLista()
+
+const createList = (materia, profesor) => {
+  const newMateria = {
+    materia,
+    profesor
+  }
   listaMaterias.push(newMateria)
 }
 
 // ----------- HANDLESUBMIT ----------------
 
 const handleSubmit = document.querySelector('#form').addEventListener('submit', e => {
-  e.preventDefault();
+  e.preventDefault()
   // Get the form data
-  const data = new FormData(e.target);
+  const data = new FormData(e.target)
   // Convert the data to an object
   const obj = Object.fromEntries(data.entries());
-   // Convert the object to JSON
-  console.log(obj.materia);
-  console.log(obj.seccion);
-  createList(obj.materia, obj.seccion)
+  // create list
+  createList(obj.materia, obj.profesor)
+  pintarLista();
 })
 
+// export default listaMaterias;
