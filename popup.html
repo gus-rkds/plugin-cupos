@@ -9,20 +9,22 @@
 </head>
 <body class="container">
   <h2 class="title">Cupos - USM</h2>
+  <table id="table">
+    <thead>
+      <tr>
+        <th>Materia</th>
+        <th>profesor</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
   <form class="form" id="form">
     <label for="materia">elige la materia</label>
     <select name="materia" id="materia">
-      <option value="1MA">CONTABILIDAD</option>
-      <option value="1MB">MATEMATICAS II</option>
-      <option value="1MC">MATEMATICAS III</option>
+      <option value="CONTABILIDAD">CONTABILIDAD</option>
+      <option value="MATEMATICAS II">MATEMATICAS II</option>
+      <option value="MATEMATICAS III">MATEMATICAS III</option>
     </select>
-  </br>
-  <label for="seccion">elige la seccion</label>
-  <select name="seccion" id="seccion">
-    <option value="A">A</option>
-    <option value="B">B</option>
-    <option value="C">C</option>
-  </select>
   </br>
       <label for="profesor">elige el profesor</label>
       <select name="profesor" id="profesor">
@@ -36,4 +38,3 @@
   <script type="module" src="popup.js"></script>
 </body>
 </html>
-
