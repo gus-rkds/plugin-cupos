@@ -1,4 +1,6 @@
-const seccionesSeleccionar ={
+// ----------- Script ----------------
+
+const seccionesSeleccionar = {
 "HUMANIDADES I": "1MB", 
 "MATEMATICA III": "1MA", 
 "DEONTOLOGIA PROFESIONAL": "1MA", 
@@ -15,4 +17,3 @@ btnsSucess.forEach(function(button){
 		button.click()
 	}
 })
-
